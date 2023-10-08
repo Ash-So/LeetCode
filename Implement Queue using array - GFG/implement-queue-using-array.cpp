@@ -72,7 +72,7 @@ void MyQueue :: push(int x)
         if(100005<=rear) return;
         else{
             arr[rear]=x;
-            rear++;
+            rear=(rear+1)%100005;
         }
 }
 
