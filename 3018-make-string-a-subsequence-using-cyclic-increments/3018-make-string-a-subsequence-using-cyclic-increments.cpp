@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool canMakeSubsequence(string str1, string str2) {
+        // TC: O(n) SC:O(1)
         int n = str1.size();
         int m = str2.size();
         int j=0;
