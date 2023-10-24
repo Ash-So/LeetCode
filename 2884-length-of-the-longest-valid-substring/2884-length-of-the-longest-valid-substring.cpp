@@ -1,6 +1,10 @@
 class Solution {
 public:
     int longestValidSubstring(string word, vector<string>& forbidden) {
+    /* Time : O(m * maxLen + n * (maxLen^2))       // set + Sliding Window         
+       Space : O(m * maxLen + n * maxLen )         // set + temp string
+    where, n = word.size(), m = forbidden.size(), maxLen = Max length of any forbidden word */
+
         // data structure to store forbidden words
         int maxLen = 0;
         unordered_set<string> set;
