@@ -1,6 +1,7 @@
 class Solution {
 public:
     int partitionString(string s) {
+        //  TC: O(n)  SC: O(1)
         unordered_set<char> set;
         int res=1;
 
