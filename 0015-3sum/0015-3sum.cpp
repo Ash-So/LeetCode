@@ -1,6 +1,7 @@
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
+//         TC: O(nlogn) + O(n*n)  SC: O(no. of triplets) -> for ans
         vector<vector<int>> ans;
         sort(nums.begin(), nums.end());
         for(int i =0;i<nums.size();i++){
