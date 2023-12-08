@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool isPalindrome(string s) {
+//         TC: O(n)  SC: O(1)
         int i = 0, j = s.size()-1;
         
         while(i<j){
