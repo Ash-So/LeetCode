@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
 //         TC: O(m*n*26)  SC:O(26*n) m: no. of input strings n:no. of letters in 1 input string
-        unordered_map<string,vector<string>> m;
+    unordered_map<string,vector<string>> m;
 
     for(int i=0;i<strs.size();i++){
         string key=getKey(strs[i]);
@@ -22,7 +22,7 @@ private:
         }
         string key="";
         for(int i=0;i<count.size();i++){
-            key.append(to_string(count[i])+'#');
+            key.append(to_string(count[i])+'$');
         }
         return key;
     }
